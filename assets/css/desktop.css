@@ -135,3 +135,59 @@ ol, ul {
 .site_nav ol li {
     position: relative;
 }
+
+a:link {
+    color: #f2aa4cff;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: #f2aa4cff;
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: none;
+}
+  
+a:active {
+    text-decoration: none;
+}
+
+span {
+    position: relative;
+    cursor: pointer;
+    margin:0;
+}
+  
+span:before, span:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: #f2aa4cff;
+}
+  
+span:before {
+    left: -5px;
+}
+  
+span:after {
+    right: 2.5px;
+    background: #f2aa4cff;
+    transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+  
+span:hover:before {
+    background: #f2aa4cff;
+    width: 120%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+  
+span:hover:after {
+    background: transparent;
+    width: 120%;
+    transition: 0s;
+}
