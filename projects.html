@@ -13,13 +13,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
+    <script defer src="https://unpkg.com/swup@3"></script>
     <link rel="stylesheet" href="/assets/css/desktop.css">
     <link rel="stylesheet" href="https://use.typekit.net/seb0zhz.css" />
-    <script src="/assets/js/main.js"></script>
+    <script defer src="/assets/js/main.js"></script>
     <script src="/assets/js/sketch.js"></script>
     <script src="/assets/js/drop.js"></script>
 </head>
 <body>
-    <main>Hello World</main>
+    <div id="page" >
+        <div id="background">
+            
+        </div>
+
+        <div class="mask">
+            <div id="top"></div>
+            <div id="bottom"></div>
+        </div>
+        <div class="frame"></div>
+        <div class="heading">
+            <h1 class="name">Charles Condon</h1>
+            <p class="name_label">Developer &amp; Illustrator</p>
+            <nav class="site_nav">
+                <ol>
+                    <li class="menuItem">
+                        <span><a href="/index.html" id="home">Home</a></span>
+                    </li>
+                    <li class="menuItem">
+                        <span><a href="/projects.html" id="projects">Projects</a></span>
+                    </li>
+                    <li class="menuItem">
+                        <span><a href="/about.html" id="about">About</a></span>
+                    </li>
+                    <li class="menuItem">
+                        <span><a href="/contact.html" id="contact">Contact</a></span>
+                    </li>
+                </ol>
+            </nav>
+        </div>
+        <main id="swup" class="transition-fade content">
+            <div id="projects">projects projects projects</div>
+        </main>
+    </div>
+
 </body>
 </html>

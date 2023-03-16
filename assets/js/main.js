@@ -10,4 +10,6 @@ document.addEventListener('click', function(e) {
     return;
   }
 });
+
+const swup = new Swup();
   
