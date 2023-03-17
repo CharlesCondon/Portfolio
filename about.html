@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
-    <script defer src="https://unpkg.com/swup@3"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
     <link rel="stylesheet" href="/assets/css/desktop.css">
     <link rel="stylesheet" href="https://use.typekit.net/seb0zhz.css" />
     <script defer src="/assets/js/main.js"></script>
@@ -21,10 +21,8 @@
     <script src="/assets/js/drop.js"></script>
 </head>
 <body>
-    <div id="page" >
-        <div id="background">
-            
-        </div>
+    <div id="page" data-barba="wrapper">
+        <div id="background"></div>
 
         <div class="mask">
             <div id="top"></div>
@@ -32,7 +30,7 @@
         </div>
         <div class="frame"></div>
         <div class="heading">
-            <h1 class="name">Charles Condon</h1>
+            <h1 class="name">Charles Condon  <img class="eye" src="/assets/images/eye.png" alt="eye"></h1>
             <p class="name_label">Developer &amp; Illustrator</p>
             <nav class="site_nav">
                 <ol>
@@ -51,8 +49,27 @@
                 </ol>
             </nav>
         </div>
-        <main id="swup" class="transition-fade content">
-            <div id="info">info info info</div>
+        <main data-barba="container" data-barba-namespace="about">
+            <div id="info">
+                <div id="bio">
+                    <p>
+                        Hi! I'm Charles, a web developer and digital illustrator with a 
+                        passion for all things creative and innovative.<br><br>
+                        I graduated NYU for Computer Science and have established myself
+                        as an Enterprise Architect at PepsiCo.<br><br> I thuroughly enjoy
+                        creating unique web-apps and using new technologies to do so. Outside
+                        of development, I also do graphic design and digital illustration.
+                        My artistic talents have even earned me a spot as a verified artist 
+                        on Giphy, where my animations have amassed over 285 million views.
+                    </p>
+                </div>
+                <div id="socialsCont">
+                    <a class="socials" href="https://www.linkedin.com/in/charles-condon-991594149/" target="_blank">LinkedIn</a>
+                    <a class="socials" href="https://github.com/CharlesCondon" target="_blank">Github</a>
+                    <a class="socials" href="https://giphy.com/charlescon" target="_blank">Giphy</a>
+                    <a class="socials" href="">Resume</a>
+                </div>
+            </div>
         </main>
     </div>
 

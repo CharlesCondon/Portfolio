@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
-    <script defer src="https://unpkg.com/swup@3"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
     <link rel="stylesheet" href="/assets/css/desktop.css">
     <link rel="stylesheet" href="https://use.typekit.net/seb0zhz.css" />
     <script defer src="/assets/js/main.js"></script>
@@ -21,40 +21,7 @@
     <script src="/assets/js/drop.js"></script>
 </head>
 <body>
-    <div id="page" >
-         <main id="swup" class="transition-fade content">
-            <!--<div id="subContainer">
-                <div class="submission">
-                    <form
-                        id="contactForm"
-                        action="https://formspree.io/f/xleolaod"
-                        method="POST"
-                    >
-                        <input
-                            class="req"
-                            type="text"
-                            name="name"
-                            placeholder="NAME*"
-                            required
-                        />
-                        <input
-                            class="req"
-                            type="email"
-                            name="_replyto"
-                            placeholder="EMAIL*"
-                            required
-                        />
-                        <input type="text" name="subject" placeholder="SUBJECT" />
-
-                        <textarea name="message" placeholder="MESSAGE"></textarea>
-
-                        <input type="submit" value="SEND" />
-                        
-                    </form>
-                </div>
-            </div> -->
-            <div>contact contact contact</div>
-        </main>
+    <div id="page" data-barba="wrapper">
         <div id="background">
             
         </div>
@@ -84,7 +51,38 @@
                 </ol>
             </nav>
         </div>
-        
+        <main data-barba="container" data-barba-namespace="contact">
+            <div id="subContainer">
+                <div class="submission">
+                    <form
+                        id="contactForm"
+                        action="https://formspree.io/f/xleolaod"
+                        method="POST"
+                    >
+                        <input
+                            class="req"
+                            type="text"
+                            name="name"
+                            placeholder="NAME*"
+                            required
+                        />
+                        <input
+                            class="req"
+                            type="email"
+                            name="_replyto"
+                            placeholder="EMAIL*"
+                            required
+                        />
+                        <input type="text" name="subject" placeholder="SUBJECT" />
+
+                        <textarea name="message" placeholder="MESSAGE"></textarea>
+
+                        <input type="submit" value="SEND" />
+                        
+                    </form>
+                </div>
+            </div>
+        </main>
     </div>
 
 </body>
