@@ -13,7 +13,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
-    <script defer src="https://unpkg.com/swup@3"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
     <link rel="stylesheet" href="/assets/css/desktop.css">
     <link rel="stylesheet" href="https://use.typekit.net/seb0zhz.css" />
     <script defer src="/assets/js/main.js"></script>
@@ -21,7 +21,7 @@
     <script src="/assets/js/drop.js"></script>
 </head>
 <body>
-    <div id="page" >
+    <div id="page" data-barba="wrapper">
         <div id="background">
             
         </div>
@@ -51,8 +51,16 @@
                 </ol>
             </nav>
         </div>
-        <main id="swup" class="transition-fade content">
-            <div id="projects">projects projects projects</div>
+        <main data-barba="container" data-barba-namespace="about">
+            <div id="projectCont">
+                <a class="proj" href=""><div class="lang">JavaScript/HTML/CSS</div><div class="pName">Wordle 2</div></a>
+                <a class="proj" href=""><div class="lang">JavaScript/HTML/CSS</div><div class="pName">Higher Lower</div></a>
+                <a class="proj" href=""><div class="lang">JavaScript</div><div class="pName">Art News Bot</div></a>
+                <a class="proj" href=""><div class="lang">React/JavaScript/HTML/CSS</div><div class="pName">BottomsUp</div></a>
+                <a class="proj" href=""><div class="lang">JavaScript</div><div class="pName">URL Shortener</div></a>
+                <a class="proj" href=""><div class="lang">C</div><div class="pName">Threonine Identifier</div></a>
+                <a class="proj" href=""><div class="lang">C</div><div class="pName">OS Shell</div></a>
+            </div>
         </main>
     </div>
 
