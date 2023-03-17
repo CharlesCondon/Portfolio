@@ -25,6 +25,7 @@ body {
     transition-duration: .9s;
     transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
     font-family: hobo-std, sans-serif;
+    z-index: 1;
 }
 
 #background {
@@ -42,7 +43,8 @@ body {
 #defaultCanvas0 {
     display: table-cell;
     vertical-align: top;
-    opacity: 15%;
+    opacity: 5%;
+    z-index: 1;
 }
 
 .mask {
@@ -65,7 +67,7 @@ body {
     transition-property: background-color;
     transition-duration: .9s;
     transition-timing-function: cubic-bezier(0.1, 0.4, 0.2, 1);
-    opacity: .9;
+    opacity: 1;
     
 }
 
@@ -81,7 +83,7 @@ body {
 
 .frame {
     position: fixed;
-    z-index: 10;
+    z-index: 5;
     left: var(--pad);
     right: var(--pad);
     top: var(--pad);
@@ -93,12 +95,11 @@ body {
 
 .heading {
     position: fixed;
-    z-index: 10;
+    z-index: 7;
     left: calc(var(--pad)*2);
     top: calc(var(--pad)*2);
     mix-blend-mode: difference;
     color: rgb(242, 170, 76);
-    z-index: 10;
 }
 
 .name {
@@ -108,7 +109,21 @@ body {
 }
 
 .eye {
-    width: 15px;
+    width: 20px;
+}
+
+#hand {
+    position: absolute;
+    right: 25%;
+    bottom: 0;
+    width: 55%; 
+}
+  
+#fire {
+    position: absolute;
+    right: 45%;
+    bottom: 20vw;
+    width: 13%;
 }
 
 @media (min-width: 1200px) {
@@ -116,14 +131,36 @@ body {
         font-size: 60px;
     }
     .eye {
-        width: 20px;
+        width: 50px;
     }
+    #hand {
+        right: 10%;
+    }
+    #fire {
+        right: 30%;
+    }
+}
+
+@media (min-width: 1900px) {
+    #hand {
+        width: 50%;
+    }
+    #fire {
+        bottom: 17vw;
+        width: 10%;
+    }
+}
+
+h1 {
+    align-items: center;
 }
 
 .name_label {
     margin-top: 5px;
     font-weight: 400;
 }
+
+/* Nav CSS */
 
 .site_nav {
     margin-top: 50px;
@@ -171,7 +208,7 @@ span:before, span:after {
     content: '';
     position: absolute;
     width: 0%;
-    height: 2px;
+    height: 1px;
     top: 50%;
     margin-top: -0.5px;
     background: #f2aa4cff;
@@ -214,7 +251,6 @@ html.is-leaving .transition-fade {
 
 .content {
     position: fixed;
-    z-index: 10;
     left: var(--pad);
     right: var(--pad);
     top: var(--pad);
@@ -223,20 +259,7 @@ html.is-leaving .transition-fade {
     pointer-events: none;
 }
 
-#hand {
-    position: absolute;
-    right: 25%;
-    bottom: 0;
-    width: 55%; 
-}
-  
-#fire {
-    position: absolute;
-    right: 45%;
-    bottom: 20vw;
-    width: 13%;
-}
-
+/* Hand CSS */
 .burn {
     animation-name: burn;
     animation-iteration-count: infinite;
@@ -258,3 +281,79 @@ html.is-leaving .transition-fade {
       opacity: 1;
     }
 }
+
+/* Contact CSS */
+/* #subContainer {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.submission {
+    text-align: center;
+    float: left;
+    border: 7px double #f2aa4cff;
+    background: rgb(0, 0, 0, 1);
+    padding: 2em;
+    margin: 0 auto 0 auto;
+    width: 60%;
+    z-index: 11;
+}
+  
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    z-index: 100;
+}
+
+input {
+    background-color: rgb(16, 24, 32, 0.5);
+    width: 95%;
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 0 auto 2em auto;
+    padding: 1em 0em 1em .5em;
+    color: white;
+}
+  
+textarea {
+    background-color: rgb(16, 24, 32, 0.5);
+    border: 3px solid black;
+    border-radius: 15px;
+    width: 95%;
+    height: 4em;
+    margin: 0 auto 2em auto;
+    padding: 1em 0em 1em .5em;
+    color: white;
+    resize: none;
+}
+  
+input[type=submit] {
+    font-family: hobo-std, sans-serif;
+    background-color: rgb(16, 24, 32, 0.5);
+    color: #f2aa4cff;
+    font-size: 1.5em;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+    width: 100%;
+}
+  
+label {
+    color: #FF7F7F;
+}
+  
+.inputError {
+    background-color: rgb(16, 24, 32, 0.5);
+    width: 100%;
+    border: 3px solid #FF7F7F;
+    border-radius: 15px;
+    margin: 0em auto 0em auto;
+    padding: 1em 0em 1em .5em;
+    color: white;
+} */
