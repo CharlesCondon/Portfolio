@@ -112,15 +112,14 @@ body {
 
 #hand {
     position: absolute;
-    right: 25%;
-    bottom: 0;
+    right: 24%;
+    bottom: var(--pad);
     width: 55%; 
 }
-  
 #fire {
     position: absolute;
-    right: 45%;
-    bottom: 20vw;
+    right: 44%;
+    bottom: 23vw;
     width: 13%;
 }
 
@@ -136,16 +135,19 @@ body {
     }
     #fire {
         right: 30%;
+        bottom: 23vw;
     }
 }
 
-@media (min-width: 1900px) {
+@media (max-width: 600px) {
     #hand {
-        width: 50%;
+        right: 7%;
+        width: 90%; 
     }
     #fire {
-        bottom: 17vw;
-        width: 10%;
+        right: 36%;
+        bottom: 40vw;
+        width: 30%;
     }
 }
 
