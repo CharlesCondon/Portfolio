@@ -178,13 +178,17 @@ ol, ul {
     position: relative;
 }
 
-a:link {
+a {
     color: #f2aa4cff;
+}
+
+a:link {
+    /* color: #f2aa4cff; */
     text-decoration: none;
 }
   
 a:visited {
-    color: #f2aa4cff;
+    /* color: #f2aa4cff; */
     text-decoration: none;
 }
   
@@ -280,26 +284,34 @@ html.is-leaving .transition-fade {
     }
 }
 
+/* #racecar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: var(--pad);
+    width: 60%;
+} */
+
 #info {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    position: absolute;
+    justify-content: space-between;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border: 5px double rgb(242, 170, 76);
-    padding: var(--pad);
+    /* border: 5px double rgb(242, 170, 76); */
+    padding: 20px;
     width: 50%;
     height: auto;
-    background-color: black;
+    /* background-color: black; */
     z-index: 200;
-    font-size: 1.5vw;
+    font-size: 2vw;
     font-family:'Times New Roman', Times, serif;
 }
 
 #bio {
-    width: 50%;
+    width: 75%;
     margin-right: var(--pad);
     display: flex;
     flex-direction: column;
@@ -310,6 +322,7 @@ html.is-leaving .transition-fade {
     white-space: normal;
     width: 100%;
     height: auto;
+    color: rgb(229, 131, 63);
     /* font-size: 1em; */
 }
 
@@ -446,11 +459,13 @@ label {
     text-align: right;
     justify-content: right;
     align-items: baseline;
+    
 }
 
 .lang {
     font-family:'Times New Roman', Times, serif;
     font-size: 1.5vw;
+    color: rgb(229, 131, 63);
 }
 
 .pName {
