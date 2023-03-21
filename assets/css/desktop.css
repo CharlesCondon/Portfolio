@@ -364,13 +364,12 @@ html.is-leaving .transition-fade {
 #socialsCont {
     display: flex;
     flex-direction: column;
-    
 }
 
 .socials {
     width: auto;
     text-align: center;
-    border: 2px solid rgb(242, 170, 76);
+    /* border: 2px solid rgb(242, 170, 76); */
     border-radius: 10px;
     padding: 10px;
 }
@@ -381,16 +380,53 @@ html.is-leaving .transition-fade {
 @media (max-width: 799px) {
     #info {
         flex-direction: column;
+        position: fixed;
+        left: var(--pad);
+        top: var(--pad);
+        transform: none;
+    }
+    #charles {
+        position: fixed;
+        right: 10%;
+        top: 21%;
+        width: 166px;
     }
     #bio {
-        width: 100%;
+        width: 80%;
+        position: fixed;
+        left: calc(var(--pad)*2);
+        top: 55%;
+    }
+    #bio p {
+        font-size: 3vw;
+    }
+    #bio h1 {
+        font-size: 5vw;
     }
     .socials {
-        width: 75%;
-        margin: auto;
+        font-size: 4vw;
+        padding: 6px;
+        margin: 5px;
+        border: none;
     }
-    #socialsCont {
-        row-gap: 15px;
+    #foot {
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media (max-width: 322px) {
+    #bio {
+        top: 60%;
+    }
+}
+@media (max-height: 420px) {
+    #bio {
+        display: none;
+    }
+    .socials {
+        font-size: 2vw;
     }
 }
 
