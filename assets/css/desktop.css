@@ -344,7 +344,7 @@ html.is-leaving .transition-fade {
 
 #charles {
     width: 100%;
-    border-radius: 30px;
+    border-radius: 10px 35px 35px 10px;
     border: 5px double rgb(242, 170, 76);
 }
 
@@ -390,6 +390,7 @@ html.is-leaving .transition-fade {
         right: 10%;
         top: 21%;
         width: 166px;
+        border-radius: 30px;
     }
     #bio {
         width: 80%;
