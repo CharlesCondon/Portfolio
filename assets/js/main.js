@@ -1,15 +1,6 @@
-// document.addEventListener('click', function(e) {
-//   var el = e.target;
-
-//   while (el && !el.href) {
-//     el = el.parentNode;
-//   }
-
-//   if (el) {
-//     e.preventDefault();
-//     return;
-//   }
-// });
+document.getElementById('charles').onclick = function(e) {
+    e.target.classList.add('animate__flip');
+}
 
 barba.init({
     transitions: [{

@@ -304,14 +304,13 @@ html.is-leaving .transition-fade {
     padding: 20px;
     width: 50%;
     height: auto;
-    /* background-color: black; */
+    max-height: 55%;
     z-index: 200;
-    font-size: 2vw;
     font-family:'Times New Roman', Times, serif;
 }
 
 #bio {
-    width: 75%;
+    width: 50%;
     margin-right: var(--pad);
     display: flex;
     flex-direction: column;
@@ -323,13 +322,47 @@ html.is-leaving .transition-fade {
     width: 100%;
     height: auto;
     color: rgb(229, 131, 63);
-    /* font-size: 1em; */
+    font-size: 1.5vw;
+}
+#bio h1 {
+    display: flex;
+    word-wrap: break-word;
+    white-space: normal;
+    width: 100%;
+    height: auto;
+    font-size: 2vw;
+}
+
+#imgCont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+#charles {
+    width: 100%;
+    border-radius: 30px;
+    border: 5px double rgb(242, 170, 76);
+}
+
+#foot {
+    position: fixed;
+    left: var(--pad);
+    right: var(--pad);
+    bottom: var(--pad);
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 50%;
 }
 
 #socialsCont {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    
 }
 
 .socials {
