@@ -436,7 +436,7 @@ html.is-leaving .transition-fade {
     flex-direction: column;
     width: 60%;
     position: fixed;
-    top: 50%;
+    top: 51%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 500;
@@ -510,6 +510,46 @@ label {
     margin: 0em auto 0em auto;
     padding: 1em 0em 1em .5em;
     color: white;
+}
+
+@media (max-width: 798px) {
+    #subContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 500;
+    }
+    .submission {
+        padding: 1em;
+        width: 55%;
+    }
+    input {
+        margin: 0 auto .5em auto;
+    }
+    input[type=submit] {
+        font-size: 1em;
+    }
+    textarea {
+        margin: 0 auto .5em auto;
+    }
+}
+@media (max-width: 322px) {
+    #subContainer {
+        width: 60%;
+        left: 65%;
+        top: 50%;
+    }
+}
+@media (max-height: 420px) {
+    #subContainer {
+        width: 60%;
+        left: 65%;
+        top: 50%;
+    }
 }
 
 /* Projects CSS */
