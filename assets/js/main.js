@@ -1,7 +1,3 @@
-document.getElementById('charles').onclick = function(e) {
-    e.target.classList.add('animate__flip');
-}
-
 barba.init({
     transitions: [{
         name: 'opacity-transition',
