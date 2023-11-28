@@ -563,6 +563,7 @@ label {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .proj {
@@ -591,13 +592,16 @@ label {
 @media (max-width: 600px) {
     #projectCont {
         height: 40%;
+        max-height: 310px;
         justify-content: space-between;
+        overflow-y: scroll;
+       
     }
     .lang {
         font-size: 3vw;
     }
     .pName {
-        font-size: 6vw;
+        font-size: 5.5vw;
         padding-left: 15px;
     }
 }
